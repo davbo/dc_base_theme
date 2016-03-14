@@ -8,6 +8,7 @@ setup(name='DC Base Theme',
       author='Sym Roe',
       author_email='sym.roe@democracyclub.org.uk',
       packages=['dc_theme'],
+      include_package_data=True,
       )
 
 
