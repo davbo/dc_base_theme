@@ -1,1 +1,2 @@
 recursive-include dc_theme *
+recursive-include dc_theme/static/bower_components *

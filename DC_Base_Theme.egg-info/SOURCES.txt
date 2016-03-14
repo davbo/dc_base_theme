@@ -1,4 +1,5 @@
 MANIFEST.in
+setup.py
 DC_Base_Theme.egg-info/PKG-INFO
 DC_Base_Theme.egg-info/SOURCES.txt
 DC_Base_Theme.egg-info/dependency_links.txt
