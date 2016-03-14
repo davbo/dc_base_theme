@@ -1,0 +1,14 @@
+body > header {
+  background-color:$header_bg;
+  img {
+    float:left;
+    margin-right:1em;
+  }
+  h1 {
+    color:$white-100;
+    line-height:90px;
+    margin:0;
+    padding:0;
+//    font-size:2em;
+  }
+}

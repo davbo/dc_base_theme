@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+@font-face {
+    font-family: 'BrandonText';
+    src: url('../fonts/BrandonText.eot');
+    src: url('../fonts/BrandonText.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BrandonText.woff') format('woff'),
+         url('../fonts/BrandonText.ttf') format('truetype'),
+         url('../fonts/BrandonText.svg#wf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-variant-ligatures: common-ligatures;
+    font-variant-ligatures: common-ligatures;
+    font-family:'Roboto', sans-serif;
+    color:rgb(53, 54, 58);
+}
+
+h1, h2, h3 {
+    font-family: 'BrandonText', sans-serif;
+}

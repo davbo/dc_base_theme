@@ -1,0 +1,23 @@
+{% extends "dc_base_naked.html" %}
+
+{% load static %}
+
+{% block body_base %}
+    <header role="banner">
+      <div class="row">
+        <div class="columns large-12">
+          <img src="{% static "dc_theme/images/logo.png" %}">
+          <h1>Democracy Club</h1>
+        </div>
+      </div>
+    </header>
+
+
+    <main class=row>
+      <div class="columns large-12">
+        {% block content %}{% endblock content %}
+      </div>
+    </main>
+
+{% endblock body_base %}
+

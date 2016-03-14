@@ -1,0 +1,24 @@
+{% load compile_static %}{% load static %}<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block base_title %}{% endblock base_title %}</title>
+    <link rel="stylesheet" href="{% static "dc_theme/scss/app.scss"|compile %}" />
+    {% block extra_css %}{% endblock extra_css %}
+  </head>
+  <body>
+
+    {% block body_base %}{% endblock body_base %}
+
+    <script src="{% static "dc_theme/bower_components/jquery/dist/jquery.js" %}"></script>
+    <script src="{% static "dc_theme/bower_components/what-input/what-input.js" %}"></script>
+    <script src="{% static "dc_theme/bower_components/foundation-sites/dist/foundation.js" %}"></script>
+    <script src="{% static "dc_theme/js/fallback.min.js" %}"></script>
+    <script src="{% static "dc_theme/js/jquery.min.js" %}"></script>
+
+    {% block extra_javascript %}{% endblock extra_javascript %}
+    {% block in_page_javascript %}{% endblock in_page_javascript %}
+  </body>
+</html>
