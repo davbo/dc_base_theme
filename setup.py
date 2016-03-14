@@ -38,7 +38,7 @@ setup(name='DC Base Theme',
       author='Sym Roe',
       author_email='sym.roe@democracyclub.org.uk',
       packages=packages,
-      data_files=data_files,
+      package_data=data_files,
       include_package_data=True,
       )
 
