@@ -1,2 +1,1 @@
-recursive-include dc_theme/static *
-recursive-include dc_theme/templates *
+recursive-include dc_theme *

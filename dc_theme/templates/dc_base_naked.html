@@ -1,22 +1,42 @@
 {% load compile_static %}{% load static %}<!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="{{LANGUAGE_CODE}}">
   <head>
+    <title>{% block base_title %}{% endblock base_title %}</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block base_title %}{% endblock base_title %}</title>
+    {% block site_meta %}{% endblock site_meta %}
+    {% block site_icons %}{% endblock site_icons %}
     {% block extra_site_css %}{% endblock extra_site_css %}
     {% block extra_page_css %}{% endblock extra_page_css %}
   </head>
   <body {% block body_class_attr %}{% endblock body_class_attr %}>
 
     {% block body_base %}{% endblock body_base %}
-
-    <script src="{% static "dc_theme/bower_components/jquery/dist/jquery.js" %}"></script>
-    <script src="{% static "dc_theme/bower_components/what-input/what-input.js" %}"></script>
-    <script src="{% static "dc_theme/bower_components/foundation-sites/dist/foundation.js" %}"></script>
     <script src="{% static "dc_theme/js/fallback.min.js" %}"></script>
-    <script src="{% static "dc_theme/js/jquery.min.js" %}"></script>
+
+    <script type="text/javascript">
+        fallback.load({
+            jQuery: [
+                '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js',
+                '//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js',
+                '{% static "dc_theme/bower_components/jquery/dist/jquery.js" %}'
+            ],
+            whatinput: [
+                '//cdn.jsdelivr.net/g/foundation@6.2.0,what-input@2.0.1',
+                '{% static "dc_theme/bower_components/what-input/what-input.js" %}'
+            ],
+            foundation: [
+                '//cdn.jsdelivr.net/foundation/6.2.0/foundation.min.js',
+                '{% static "dc_theme/bower_components/foundation-sites/dist/foundation.js" %}'
+            ]
+        }, {
+            shim: {
+                'whatinput': ['jQuery'],
+                'foundation': ['whatinput']
+            }
+        });
+    </script>
 
     {% block extra_javascript %}{% endblock extra_javascript %}
     {% block in_page_javascript %}{% endblock in_page_javascript %}
