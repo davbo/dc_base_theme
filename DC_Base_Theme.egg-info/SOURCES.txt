@@ -4,6 +4,10 @@ DC_Base_Theme.egg-info/SOURCES.txt
 DC_Base_Theme.egg-info/dependency_links.txt
 DC_Base_Theme.egg-info/top_level.txt
 dc_theme/__init__.py
+dc_theme/__pycache__/__init__.cpython-34.pyc
+dc_theme/__pycache__/admin.cpython-34.pyc
+dc_theme/__pycache__/models.cpython-34.pyc
+dc_theme/migrations/__pycache__/__init__.cpython-34.pyc
 dc_theme/static/.sass-cache/2a8db18f3408b7ec7de5ca1228be413e194c1744/_fade.scssc
 dc_theme/static/.sass-cache/2a8db18f3408b7ec7de5ca1228be413e194c1744/_hinge.scssc
 dc_theme/static/.sass-cache/2a8db18f3408b7ec7de5ca1228be413e194c1744/_shake.scssc
@@ -123,6 +127,7 @@ dc_theme/static/.sass-cache/f21c5b15473f44d115c0fa565f6e1887a82bb9ab/r.scssc
 dc_theme/static/.sass-cache/f39744aedce3f33434249ca6d3f61dbe6b2ab320/_fonts.scssc
 dc_theme/static/.sass-cache/f39744aedce3f33434249ca6d3f61dbe6b2ab320/_settings.scssc
 dc_theme/static/.sass-cache/f39744aedce3f33434249ca6d3f61dbe6b2ab320/app.scssc
+dc_theme/static/.sass-cache/f39744aedce3f33434249ca6d3f61dbe6b2ab320/dc_base.scssc
 dc_theme/static/.sass-cache/f39744aedce3f33434249ca6d3f61dbe6b2ab320/material-foundation.scssc
 dc_theme/static/dc_theme/.bowerrc
 dc_theme/static/dc_theme/.gitignore
@@ -8908,11 +8913,10 @@ dc_theme/static/dc_theme/node_modules/gulp/node_modules/vinyl-fs/node_modules/vi
 dc_theme/static/dc_theme/node_modules/gulp/node_modules/vinyl-fs/node_modules/vinyl/node_modules/clone-stats/package.json
 dc_theme/static/dc_theme/node_modules/gulp/node_modules/vinyl-fs/node_modules/vinyl/node_modules/clone-stats/test.js
 dc_theme/static/dc_theme/scss/_settings.scss
-dc_theme/static/dc_theme/scss/app.scss
+dc_theme/static/dc_theme/scss/dc_base.scss
 dc_theme/static/dc_theme/scss/dc/_fonts.scss
 dc_theme/static/dc_theme/scss/dc/_header.scss
 dc_theme/static/dc_theme/scss/dc/_material.scss
 dc_theme/static/dc_theme/scss/dc/_vars.scss
 dc_theme/templates/dc_base.html
-dc_theme/templates/dc_base_fill_width.html
 dc_theme/templates/dc_base_naked.html
