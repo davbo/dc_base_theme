@@ -1,3 +1,5 @@
 recursive-include dc_theme *
 recursive-include dc_theme/static/dc_theme/bower_components *
+recursive-include dc_theme/static/dc_theme/bower_components/foundation-sites *
+recursive-include dc_theme/static/dc_theme/bower_components/jquery *
 recursive-include dc_theme/static/dc_theme *
