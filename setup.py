@@ -42,6 +42,7 @@ setup(name='DC Base Theme',
           '*.scss',
           '*.html',
           '*.js',
+          '*.png',
       ]},
       include_package_data=True,
       )
