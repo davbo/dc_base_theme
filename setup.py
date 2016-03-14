@@ -38,7 +38,10 @@ setup(name='DC Base Theme',
       author='Sym Roe',
       author_email='sym.roe@democracyclub.org.uk',
       packages=packages,
-      package_data={'dc_theme': ['*']},
+      package_data={'dc_theme': [
+          'static/*',
+          'templates/*',
+      ]},
       include_package_data=True,
       )
 
