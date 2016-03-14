@@ -5,10 +5,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block base_title %}{% endblock base_title %}</title>
-    <link rel="stylesheet" href="{% static "dc_theme/scss/app.scss"|compile %}" />
-    {% block extra_css %}{% endblock extra_css %}
+    {% block extra_site_css %}{% endblock extra_site_css %}
+    {% block extra_page_css %}{% endblock extra_page_css %}
   </head>
-  <body>
+  <body {% block body_class_attr %}{% endblock body_class_attr %}>
 
     {% block body_base %}{% endblock body_base %}
 
