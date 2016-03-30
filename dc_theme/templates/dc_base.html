@@ -3,14 +3,16 @@
 {% load static %}
 
 {% block body_base %}
+  {% block header %}
     <header role="banner">
       <div class="row">
         <div class="columns large-12">
           <img src="{% static "dc_theme/images/logo.png" %}" alt="Democracy Club logo">
-          <h1>Democracy Club</h1>
+          <h1><a href="/">{{ site_title }}</a></h1>
         </div>
       </div>
     </header>
+  {% endblock header %}
 
 
     <main class=row>
@@ -20,4 +22,3 @@
     </main>
 
 {% endblock body_base %}
-
