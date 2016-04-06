@@ -16,9 +16,15 @@
 
 
     <main class=row>
+
+      <div class="columns large-12 large-offset-1 breadcrumbs_container">
+        {% block breadcrumbs %}{% endblock breadcrumbs %}
+      </div>
       <div class="columns large-12">
         {% block content %}{% endblock content %}
       </div>
     </main>
+
+  {% block site_footer %}{% endblock site_footer %}
 
 {% endblock body_base %}
