@@ -5,10 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% block site_meta %}{% endblock site_meta %}
-    {% block site_icons %}{% endblock site_icons %}
-    {% block extra_site_css %}{% endblock extra_site_css %}
-    {% block extra_page_css %}{% endblock extra_page_css %}
+    {% block site_meta %}{% endblock site_meta %}{% block site_icons %}{% endblock site_icons %}{% block extra_site_css %}{% endblock extra_site_css %}{% block extra_page_css %}{% endblock extra_page_css %}
   </head>
   <body {% block body_class_attr %}{% endblock body_class_attr %}>
 
