@@ -1,17 +1,22 @@
 body > header {
   background-color:$header_bg;
   img {
-    float:left;
-    margin-right:1em;
+    float: left;
+    margin: 1rem;
+    height: 60px;
   }
   h1 {
-    color:$white-100;
-    line-height:90px;
-    margin:0;
-    padding:0;
+    color: $white-100;
+    height: 60px;
+    line-height: 60px;
+    margin: 1rem;
+    padding: 0;
+    letter-spacing: -0.1rem;
+    text-rendering: geometricPrecision;
+    font-size: 2.5rem;
+
     a {
       color:$white;
-      font-size:0.8em;
     }
   }
 }
