@@ -60,6 +60,11 @@
     margin-top:$card-margin;
     background-color:$grey-500;
   }
+
+  @include breakpoint(small only) {
+    margin-left: -$card-margin + 5px; 
+    margin-right: -$card-margin + 5px;
+  }
 }
 
 
