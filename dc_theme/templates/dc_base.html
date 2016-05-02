@@ -17,9 +17,31 @@
 
     <main class=row>
 
+
+
       <div class="columns large-12 large-offset-1 breadcrumbs_container">
         {% block breadcrumbs %}{% endblock breadcrumbs %}
       </div>
+
+
+
+      {% if messages %}
+      <div class="columns large-12 messages_container">
+
+        {% for message in messages %}
+        <div class="callout secondary success {{ message.tags }}" data-closable>
+          <h5>{{ message }}</h5>
+          <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        {% endfor %}
+
+
+      </div>
+      {% endif %}
+
+
       <div class="columns large-12">
         {% block content %}{% endblock content %}
       </div>
