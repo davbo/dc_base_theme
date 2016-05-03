@@ -40,7 +40,9 @@
   border-radius: $global-radius (3px);
 
   @extend .z-depth-2;
+
   margin-top:$card-margin;
+
   padding:$card-margin;
   background: $white;
   .card_header {
@@ -64,10 +66,10 @@
     background-color:$grey-500;
   }
 
-  @include breakpoint(small only) {
+  /*@include breakpoint(small only) {
     margin-left: -$card-margin + 5px; 
     margin-right: -$card-margin + 5px;
-  }
+  }*/
 }
 
 
