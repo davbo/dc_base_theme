@@ -15,16 +15,13 @@
   {% endblock header %}
   {% block top_banner %}{% endblock top_banner %}
 
-    <main class=row>
-
-
-
-      <div class="columns large-12 large-offset-1 breadcrumbs_container">
+    <div class="row">
+      <div class="columns large-12 breadcrumbs_container">
         {% block breadcrumbs %}{% endblock breadcrumbs %}
       </div>
+    </div>
 
-
-
+    <div class="row">
       {% if messages %}
       <div class="columns large-12 messages_container">
 
@@ -40,11 +37,10 @@
 
       </div>
       {% endif %}
+    </div>
 
-
-      <div class="columns large-12">
-        {% block content %}{% endblock content %}
-      </div>
+    <main class="row">
+    {% block content %}{% endblock content %}
     </main>
   
   {% block bottom_banner %}{% endblock bottom_banner %}
