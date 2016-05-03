@@ -14,11 +14,31 @@
     </header>
   {% endblock header %}
   {% block top_banner %}{% endblock top_banner %}
+
     <div class="row">
       <div class="columns large-12 breadcrumbs_container">
         {% block breadcrumbs %}{% endblock breadcrumbs %}
       </div>
     </div>
+
+    <div class="row">
+      {% if messages %}
+      <div class="columns large-12 messages_container">
+
+        {% for message in messages %}
+        <div class="callout secondary success {{ message.tags }}" data-closable>
+          <h5>{{ message }}</h5>
+          <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        {% endfor %}
+
+
+      </div>
+      {% endif %}
+    </div>
+
     <main class="row">
     {% block content %}{% endblock content %}
     </main>
