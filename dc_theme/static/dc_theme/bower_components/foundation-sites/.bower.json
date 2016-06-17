@@ -35,7 +35,8 @@
     "tag": "v6.2.0",
     "commit": "d79008091c6f32ffd9bd6ea60d266c4a76771886"
   },
-  "_source": "git://github.com/zurb/foundation-sites.git",
-  "_target": "~6.2.0",
-  "_originalSource": "foundation-sites"
+  "_source": "https://github.com/zurb/foundation-sites.git",
+  "_target": "6.2.0",
+  "_originalSource": "foundation-sites",
+  "_direct": true
 }
