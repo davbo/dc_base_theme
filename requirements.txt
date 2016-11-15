@@ -1,1 +1,3 @@
-git+https://github.com/DemocracyClub/django-static-precompiler
+django-pipeline==1.6.9
+django-pipeline-csscompressor==0.1
+libsass==0.11.1
