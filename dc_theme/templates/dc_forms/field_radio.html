@@ -1,0 +1,11 @@
+<div class="form-group">
+    <fieldset>
+        <legend class="visually-hidden">{{ field.label }}</legend>
+        {% for radio in field %}
+        <label class="block-label selection-button-radio" for="{{ radio.id_for_label }}">
+            {{ radio.tag }}
+            {{ radio.choice_label }}
+        </label>
+        {% endfor %}
+    </fieldset>
+</div>

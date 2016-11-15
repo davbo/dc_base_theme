@@ -1,4 +1,4 @@
-{% load compile_static %}{% load static from staticfiles %}<!doctype html>
+{% load static from staticfiles %}<!doctype html>
 <html class="no-js" lang="{{LANGUAGE_CODE}}">
   <head>
     <title>{% block base_title %}{% endblock base_title %}</title>
@@ -10,31 +10,6 @@
   <body {% block body_class_attr %}{% endblock body_class_attr %}>
 
     {% block body_base %}{% endblock body_base %}
-    <script src="{% static "dc_theme/js/fallback.min.js" %}"></script>
-
-    <script type="text/javascript">
-        fallback.load({
-            jQuery: [
-                '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js',
-                '//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js',
-                '{% static "dc_theme/bower_components/jquery/dist/jquery.js" %}'
-            ],
-            whatinput: [
-                '//cdn.jsdelivr.net/g/foundation@6.2.0,what-input@2.0.1',
-                '{% static "dc_theme/bower_components/what-input/what-input.min.js" %}'
-            ],
-            foundation: [
-                '//cdn.jsdelivr.net/foundation/6.2.0/foundation.min.js',
-                '{% static "dc_theme/bower_components/foundation-sites/dist/foundation.min.js" %}'
-            ]
-        }, {
-            shim: {
-                'whatinput': ['jQuery'],
-                'foundation': ['whatinput']
-            }
-        });
-    </script>
-
     {% block extra_javascript %}{% endblock extra_javascript %}
     {% block in_page_javascript %}{% endblock in_page_javascript %}
     {% block ga_tracking_code %}{% endblock ga_tracking_code %}
