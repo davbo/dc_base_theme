@@ -39,6 +39,7 @@ DEFAULT_PIPELINE = {
                 'dc_theme/js/jquery.min.js',
                 'dc_theme/bower_components/what-input/what-input.min.js',
                 'dc_theme/bower_components/foundation-sites/dist/foundation.min.js',  # NOQA
+                'dc_theme/js/app.js'
             ],
             'output_filename': 'js/scripts.js',
         }
