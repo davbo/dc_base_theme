@@ -1,3 +1,10 @@
+$gutter:              30px;
+$gutter-one-quarter:  $gutter / 4;
+$gutter-one-third:    $gutter / 3;
+$gutter-half:         $gutter / 2;
+$gutter-two-thirds:   $gutter - $gutter-one-third;
+
+
 // Full White & black default transparent values
 $white-100:  rgba(255, 255, 255, 1); $white: $white-100;
 $white-87:  rgba(255, 255, 255, 0.87);
@@ -22,6 +29,7 @@ $grey-600:  #757575;
 $grey-700:  #616161;
 $grey-800:  #424242;
 $grey-900:  #212121;
+$red: #b10e1e;
 
 
 // Theme colours
@@ -31,3 +39,6 @@ $footer_bg: #67737F;
 
 
 $card-margin: 20px;
+
+$focus-colour: #ffbf47;
+$error-colour: $red;
