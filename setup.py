@@ -51,5 +51,5 @@ setup(name='DC Base Theme',
       install_requires=[
           'django-pipeline==1.6.9',
           'libsass==0.11.1',
-      ]
-      )
+      ],
+)
