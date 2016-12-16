@@ -4,6 +4,7 @@ from django.template.loader import get_template
 from django import template
 
 from dc_theme.widgets import DayMonthYearWidget
+from dc_theme.forms import DCHeaderField
 
 register = template.Library()
 
@@ -78,3 +79,7 @@ def is_file(field):
 @register.filter
 def is_dc_date_field(field):
     return isinstance(field.field.widget, DayMonthYearWidget)
+
+@register.filter
+def is_heading(field):
+    return isinstance(field.field, DCHeaderField)

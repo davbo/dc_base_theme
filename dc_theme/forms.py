@@ -11,6 +11,15 @@ from django import forms
 from . import widgets
 
 
+class DCHeaderField(forms.Field):
+    """
+    A field that is just rendered as a heading.
+    """
+
+    def __init__(self, *args, **kwargs):
+        kwargs['required'] = False
+        super().__init__(*args, **kwargs)
+
 class DCDateField(forms.MultiValueField):
 
     widget = widgets.DayMonthYearWidget

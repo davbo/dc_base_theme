@@ -1,11 +1,13 @@
 {% load dc_forms %}
 <div class="form-group{% if field.errors %} has-error{% endif %}">
+    {% if not field|is_heading %}
         <label {% if field.field.required and form.required_css_class %}class="form-label-bold {{ form.required_css_class }}"{% endif %}>
             {{ field.label }}
             {% if field.help_text %}
                 <span class="form-hint">{{ field.help_text }}</span>
             {% endif %}
         </label>
+    {% endif %}
     {% if field|is_checkbox %}
         <div class="{{ classes.single_value }}">
             <div class="checkbox">
@@ -48,6 +50,8 @@
             </p>
             {% endif %}
         </div>
+    {% elif field|is_heading %}
+        <h2>{{ field.label }}</h2>
 
     {% else %}
         {% if field.auto_id %}
