@@ -10,6 +10,10 @@
     clear:both;
 }
 
+form > .form-group + .form-group {
+    margin-top:1.5em;
+}
+
 input[type="search"] {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box; // 2
@@ -115,4 +119,15 @@ label.selected {
 
 .selection-button-radio input:focus {
     outline: 0;
+}
+
+.large_legends legend {
+    font-size: 1.5em;
+}
+
+.inline_radios {
+    .selection-button-radio {
+        display:inline-block;
+        float:none;
+    }
 }
