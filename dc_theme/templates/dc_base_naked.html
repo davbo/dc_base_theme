@@ -5,7 +5,31 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% block site_meta %}{% endblock site_meta %}{% block site_icons %}{% endblock site_icons %}{% block extra_site_css %}{% endblock extra_site_css %}{% block extra_page_css %}{% endblock extra_page_css %}
+    {% block site_meta %}
+
+    {% block base_og_tags %}
+    <meta property="og:image" content="{% static "dc_theme/icons/og-image.jpg" %}">
+    <meta property="og:image:width" content="303">
+    <meta property="og:image:height" content="454">
+    {% endblock base_og_tags %}
+
+    {% block og_tags %}{% endblock og_tags %}
+
+    {% endblock site_meta %}
+
+    {% block site_icons %}
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static "dc_theme/icons/apple-touch-icon.png" %}?v=3eadRXNL3q">
+    <link rel="icon" type="image/png" href="{% static "dc_theme/icons/favicon-32x32.png" %}?v=3eadRXNL3q" sizes="32x32">
+    <link rel="icon" type="image/png" href="{% static "dc_theme/icons/favicon-16x16.png" %}?v=3eadRXNL3q" sizes="16x16">
+    <link rel="mask-icon" href="{% static "dc_theme/icons/safari-pinned-tab.svg" %}?v=3eadRXNL3q" color="#ec008c">
+    <link rel="shortcut icon" href="{% static "dc_theme/icons/favicon.ico" %}?v=3eadRXNL3q">
+
+
+
+    {% endblock site_icons %}
+    {% block extra_site_css %}{% endblock extra_site_css %}
+    {% block extra_page_css %}{% endblock extra_page_css %}
   </head>
   <body {% block body_class_attr %}{% endblock body_class_attr %}>
 

@@ -67,13 +67,13 @@
   }
 
   /*@include breakpoint(small only) {
-    margin-left: -$card-margin + 5px; 
+    margin-left: -$card-margin + 5px;
     margin-right: -$card-margin + 5px;
   }*/
 }
 
 
-$button-background-hover: scale-color($button-background, $lightness: -5%);
+$button-background-hover: $button-background;
 
 .raised-button, .raised-accent-button, .flat-button, .disabled-button {
   min-width: 64px;

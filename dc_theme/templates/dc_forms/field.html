@@ -51,7 +51,7 @@
             {% endif %}
         </div>
     {% elif field|is_heading %}
-        <h2>{{ field.label }}</h2>
+        <h2 id="{{field.auto_id}}">{{ field.label }}</h2>
 
     {% else %}
         {% if field.auto_id %}

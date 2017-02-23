@@ -4,45 +4,36 @@
 
 {% block body_base %}
   {% block header %}
-    <header role="banner">
-      <div class="row">
-        <div class="columns large-12">
-          <img src="{% static "dc_theme/images/logo.png" %}" alt="Democracy Club logo">
-          <h1><a href="/">{{ site_title }}</a></h1>
-        </div>
-      </div>
-    </header>
+  <header role="banner">
+    <div class="container">
+      <a href="/">
+        <img src="{% static "dc_theme/images/logo-with-text-2017.png" %}" alt="{{ site_title }}">
+      </a>
+      {% block site_menu %}{% endblock site_menu %}
+    </div>
+  </header>
   {% endblock header %}
-  {% block top_banner %}{% endblock top_banner %}
 
-    <div class="row">
-      <div class="columns large-12 breadcrumbs_container">
-        {% block breadcrumbs %}{% endblock breadcrumbs %}
-      </div>
+  {# {% block top_banner %}{% endblock top_banner %} #}
+
+  {# {% block breadcrumbs %}{% endblock breadcrumbs %} #}
+  {# {% if messages %} #}
+  {#   {% for message in messages %} #}
+  {#   <div class="callout secondary success {{ message.tags }}" data-closable> #}
+  {#     <h5>{{ message }}</h5> #}
+  {#     <button class="close-button" aria-label="Dismiss alert" type="button" data-close> #}
+  {#       <span aria-hidden="true">&times;</span> #}
+  {#     </button> #}
+  {#   </div> #}
+  {#   {% endfor %} #}
+  {# {% endif %} #}
+
+  <main>
+    <div class="container">
+      {% block content %}{% endblock content %}
     </div>
+  </main>
 
-    <div class="row">
-      {% if messages %}
-      <div class="columns large-12 messages_container">
-
-        {% for message in messages %}
-        <div class="callout secondary success {{ message.tags }}" data-closable>
-          <h5>{{ message }}</h5>
-          <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        {% endfor %}
-
-
-      </div>
-      {% endif %}
-    </div>
-
-    <main>
-    {% block content %}{% endblock content %}
-    </main>
-  
   {% block bottom_banner %}{% endblock bottom_banner %}
 
   {% block site_footer %}{% endblock site_footer %}

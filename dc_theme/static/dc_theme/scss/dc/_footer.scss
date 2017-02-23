@@ -1,10 +1,11 @@
-.footer {
+footer {
   color:$white;
-  background-color: $footer_bg;
-  text-align: center;
-  font-size: 1.0rem;
-  padding: 1rem;
-  margin-top:5em;
+  background-color: $off-black;
+  font-family:$sanserif-font;
+
+  & h2 {
+    color:$dc-bright-pink;
+  }
 
   .social a {
     display: inline-block;
@@ -18,7 +19,7 @@
     margin: 0 3px 0 0;
   }
 
-  .footer-links a {
+  a {
     list-style: none;
     font-weight: normal;
     color: #fff;
@@ -56,5 +57,9 @@
       }
     }
 
+  }
+
+  & .block-label {
+    background:none;
   }
 }
