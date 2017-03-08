@@ -14,6 +14,8 @@ $menu-text-hover: white;
 
 $global-radius: 0;
 $button-background: $dc-bright-blue;
+$button-background-highlight: darken($button-background, 5);
+$button-background-darker: darken($button-background, 10);
 
 $sanserif-font: Avenir, sans-serif;
 $serif-font: "Adobe Caslon Pro", Georgia,Cambria,"Times New Roman",Times,serif;

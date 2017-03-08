@@ -1,9 +1,16 @@
-// Form elements
-// ==========================================================================
 
-//    This has been removed from Normalize (line 408), is it needed here?
-// 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
-//    (include `-moz` to future-proof).
+button {
+    background-color:$button-background;
+    border:0;
+    padding:0.4em 0.6em;
+    margin:0.5em 0;
+    font-size:1em;
+    color:#FFF;
+    border-bottom:3px solid $button-background-darker;
+    &:hover {
+        background-color: $button-background-highlight;
+    };
+}
 
 .form-group {
     width:100%;
