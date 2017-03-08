@@ -22,6 +22,12 @@ body {
     line-height: 1.58;
 }
 
+@media screen and (min-width: 75em) {
+  body {
+    font-size: 1.4em;
+  }
+}
+
 h1, h2, h3, h4, nav {
     color:$heading-text-colour;
     font-family: $sanserif-font;
