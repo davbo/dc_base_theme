@@ -27,11 +27,6 @@ footer {
     color: #fff;
     margin: 0;
 
-    &::after {
-      content: "•";
-      padding: 0 0.2rem 0 0.4rem;
-    }
-
     &:last-child::after {
       content: "";
       padding: 0 0.4rem 0 0.8rem;
