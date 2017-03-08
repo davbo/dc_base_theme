@@ -48,8 +48,16 @@ nav[role=navigation] {
                 }
             }
             &.active {
+                &:hover{
+                    border-bottom:2px solid $dc-bright-blue;
+                }
+                a:hover {
+                    background:none;
+                    color:$body-text-colour;
+                }
                 border-bottom:2px solid $dc-bright-pink;
             }
         }
     }
 }
+
