@@ -38,6 +38,7 @@
 
 .card {
   border-radius: $global-radius (3px);
+  clear:both;
 
   @extend .z-depth-2;
 

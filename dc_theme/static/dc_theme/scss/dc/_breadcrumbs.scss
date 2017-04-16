@@ -21,8 +21,16 @@
 //</ol>
 
 .breadcrumbs {
-  margin-top:1em;
+  list-style: none;
+  padding:0 0 1em 0;
   li {
+    float: left;
     font-size:1rem;
+
+    &:not(:last-child)::after {
+      color: $dc-light-grey;
+      content: '/';
+      margin: 0 0.2em;
+    }
   }
 }
