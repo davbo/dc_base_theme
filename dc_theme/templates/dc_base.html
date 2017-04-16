@@ -24,10 +24,22 @@
   {#   </div> #}
   {#   {% endfor %} #}
   {# {% endif %} #}
+  {# {% block top_banner %}{% endblock top_banner %} #}
+
 
   <main>
     <div class="container">
       {% block breadcrumbs %}{% endblock breadcrumbs %}
+      {% if messages %}
+        {% for message in messages %}
+        <div class="card banner_message {{ message.tags }}" data-closable>
+          <h5>{{ message }}</h5>
+          <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        {% endfor %}
+      {% endif %}
       {% block content %}{% endblock content %}
     </div>
   </main>
