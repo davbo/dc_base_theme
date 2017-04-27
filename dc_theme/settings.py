@@ -17,13 +17,17 @@ SASS_INCLUDE_PATHS = (
     root_path + '/static/dc_theme/scss/',
 )
 
+SASS_ARGUMENT_LIST = ["-I " + p for p in SASS_INCLUDE_PATHS]
+SASS_ARGUMENT_LIST.append("--style compressed")
+SASS_ARGUMENT_LIST.append("--sourcemap=file")
+SASS_ARGUMENT_LIST.append("--debug-info")
+
 DEFAULT_PIPELINE = {
     'COMPILERS': (
         'pipeline.compilers.sass.SASSCompiler',
     ),
-    'SASS_BINARY': 'sassc',
-    'SASS_ARGUMENTS': ' '.join(["-I " + p for p in SASS_INCLUDE_PATHS]),
-    'CSS_COMPRESSOR': 'django_pipeline_csscompressor.CssCompressor',
+    'SASS_BINARY': 'sass',
+    'SASS_ARGUMENTS': ' '.join(SASS_ARGUMENT_LIST),
     'STYLESHEETS': {
         'styles': {
             'source_filenames': [],
