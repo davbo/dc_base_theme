@@ -17,11 +17,18 @@ button {
     clear:both;
 }
 
+.form-control {
+    font-size:19px;
+    line-height: 1.31;
+    border: 2px solid #0b0c0c;
+    padding: 5px 4px 4px;
+}
+
 form > .form-group + .form-group {
     margin-top:1.5em;
 }
 
-input[type="search"] {
+input[type="search"], input[type="text"] {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box; // 2
   box-sizing: content-box;
@@ -59,7 +66,7 @@ fieldset {
 }
 
 // Indicate that certain elements are interactive
-[role="button"],
+[role="button"], button,
 label {
   cursor: pointer;
 }
