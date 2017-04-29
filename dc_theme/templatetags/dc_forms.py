@@ -27,7 +27,6 @@ def dc_form(element):
 @register.filter
 def render(element, markup_classes):
     element_type = element.__class__.__name__.lower()
-    print(element_type)
 
     if element_type in ['boundfield']:
         add_input_classes(element)

@@ -11,9 +11,6 @@ STATICFILES_FINDERS = (
 )
 
 SASS_INCLUDE_PATHS = (
-    root_path + '/static/dc_theme/bower_components/foundation-sites/assets',
-    root_path + '/static/dc_theme/bower_components/foundation-sites/scss',
-    root_path + '/static/dc_theme/bower_components/motion-ui/src',
     root_path + '/static/dc_theme/scss/',
 )
 
@@ -41,8 +38,6 @@ DEFAULT_PIPELINE = {
         'scripts': {
             'source_filenames': [
                 'dc_theme/js/jquery.min.js',
-                'dc_theme/bower_components/what-input/what-input.min.js',
-                'dc_theme/bower_components/foundation-sites/dist/foundation.min.js',  # NOQA
                 'dc_theme/js/app.js'
             ],
             'output_filename': 'js/scripts.js',
