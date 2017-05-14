@@ -16,14 +16,13 @@ SASS_INCLUDE_PATHS = (
 
 SASS_ARGUMENT_LIST = ["-I " + p for p in SASS_INCLUDE_PATHS]
 SASS_ARGUMENT_LIST.append("--style compressed")
-SASS_ARGUMENT_LIST.append("--sourcemap=file")
-SASS_ARGUMENT_LIST.append("--debug-info")
+SASS_ARGUMENT_LIST.append("--sourcemap")
 
 DEFAULT_PIPELINE = {
     'COMPILERS': (
         'pipeline.compilers.sass.SASSCompiler',
     ),
-    'SASS_BINARY': 'sass',
+    'SASS_BINARY': 'sassc',
     'SASS_ARGUMENTS': ' '.join(SASS_ARGUMENT_LIST),
     'STYLESHEETS': {
         'styles': {
