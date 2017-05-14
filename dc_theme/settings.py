@@ -37,7 +37,7 @@ DEFAULT_PIPELINE = {
     'JAVASCRIPT': {
         'scripts': {
             'source_filenames': [
-                'dc_theme/js/jquery.min.js',
+                'dc_theme/js/jquery.js',
                 'dc_theme/js/app.js'
             ],
             'output_filename': 'js/scripts.js',
