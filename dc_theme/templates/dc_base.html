@@ -33,7 +33,11 @@
       {% if messages %}
         {% for message in messages %}
         <div class="card banner_message {{ message.tags }}" data-closable>
+          {% if 'template' in message.extra_tags %}
+          {{ message }}
+          {% else %}
           <h5>{{ message }}</h5>
+          {% endif %}
           <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
             <span aria-hidden="true">&times;</span>
           </button>

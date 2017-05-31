@@ -74,11 +74,13 @@
     background-color:$grey-500;
   }
 
+  &.banner_message.template {
+    color:$body-text-colour;
+  }
   &.banner_message {
     color:$dc-bright-blue;
-//    outline: 3px solid $focus-colour;
     position:relative;
-    @extend .z-depth-5;
+    @extend .z-depth-3;
     .close-button {
       position:absolute;
       top:-0.5em;
