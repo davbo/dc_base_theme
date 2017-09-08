@@ -8,6 +8,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'pipeline.finders.CachedFileFinder',
     'pipeline.finders.PipelineFinder',
+    'pipeline.finders.ManifestFinder',
 )
 
 SASS_INCLUDE_PATHS = (
