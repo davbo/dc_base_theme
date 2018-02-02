@@ -53,28 +53,13 @@ class DayMonthYearWidget(MultiWidget):
                 })
             output.append(html)
 
+        try:
+            return mark_safe(self.format_output(output))
+        except AttributeError:
+            return mark_safe(''.join(output))
 
-        return mark_safe(self.format_output(output))
 
     def decompress(self, value):
         if not value:
             return []
         return value
-
-    # def format_output(self, rendered_widgets):
-    #     html = """
-    #     <div class="form-group">
-    #         <fieldset>
-    #             <legend>
-    #                 <span class="form-label-bold">
-    #                     What is your date of birth?
-    #                 </span>
-    #                 <span class="form-hint" id="dob-hint">For example, 31 3 1980</span>
-    #             </legend>
-    #             <div class="form-date">{}</div>
-    #         </fieldset>
-    #     </div>
-    #     """.format(''.join(rendered_widgets))
-    #     return html
-
-
