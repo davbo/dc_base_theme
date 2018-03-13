@@ -35,6 +35,7 @@ DEFAULT_PIPELINE = {
             },
         },
     },
+    'JS_COMPRESSOR': 'pipeline.compressors.jsmin.JSMinCompressor',
     'JAVASCRIPT': {
         'scripts': {
             'source_filenames': [
