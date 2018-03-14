@@ -89,6 +89,22 @@
   }
 }
 
+.centered-card {
+  text-align: center;
+
+  form {
+    display: inline-block;
+  }
+
+  h2 {
+    margin-bottom: .5em;
+  }
+
+  button {
+    margin-top: 1em;
+  }
+}
+
 
 $button-background-hover: $button-background;
 
