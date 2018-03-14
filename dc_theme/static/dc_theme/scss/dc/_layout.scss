@@ -5,7 +5,7 @@ body {
 }
 
 
-header, main, footer {
+header, footer {
     clear:both;
     > .container {
         max-width:960px;
@@ -18,11 +18,19 @@ header, main, footer {
     }
 }
 
-main .container > article {
+main > .container {
+  max-width: 960px;
+  margin: 0;
+  @include media(710px) {
+    margin: 0 auto;
+  }
+
+  & > article {
     @include media(710px) {
         max-width:80%;
         float:left;
         overflow:auto;
     }
     overflow:hidden;
+  }
 }
