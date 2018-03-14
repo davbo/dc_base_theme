@@ -1,0 +1,21 @@
+code,
+kbd,
+samp {
+  background-color: #eff0f1;
+  display: inline-block;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+  font-size: .8em;
+  padding: 0 .2em;
+  white-space: scroll;
+}
+
+pre {
+  background-color: #eff0f1;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+  font-size: .8em;
+  margin-bottom: 1em;
+  overflow: auto;
+  padding: 5px;
+  width: auto;
+  word-wrap: normal;
+}
