@@ -47,7 +47,7 @@ setup(name='DC Base Theme',
       include_package_data=True,
       install_requires=[
           'django-pipeline==1.6.9',
-          'libsass==0.13.7',
+          'libsass==0.14.1',
           'jsmin==2.2.2',
 
       ],
