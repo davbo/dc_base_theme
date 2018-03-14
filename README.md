@@ -78,3 +78,16 @@ If you like, you can also pipe a single field to this tag.
 #### DCDateField
 
 A field that stores a date and presents 3 number input fields for day, month, year.
+
+## Styles
+
+### Tables
+
+A table's design is more than the CSS and HTML that defines it, and there are a couple of helper classes for this:
+
+1. `.highlight` will highline a row or cell.
+2. `.number` will right align the cell
+3. a table body followed by a table body (the spec allows n bodies in
+a table) will be spaced. Use for grouping content.
+
+Don't forget to use `thead` and `caption` in tables.
