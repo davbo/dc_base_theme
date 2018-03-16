@@ -9,3 +9,7 @@
 .show-for-sr {
   @include element-invisible;
 }
+
+.android_menu_list {
+  -webkit-appearance: menulist;
+}

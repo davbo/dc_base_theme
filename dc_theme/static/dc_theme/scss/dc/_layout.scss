@@ -1,10 +1,11 @@
 body {
     margin:0;
     padding:0;
+    background-color:#eee;
 }
 
 
-header, main, footer {
+header, footer {
     clear:both;
     > .container {
         max-width:960px;
@@ -17,11 +18,32 @@ header, main, footer {
     }
 }
 
-main .container > article {
+.container {
+    padding: 20px;
+    box-sizing: content-box;
+    overflow: auto;
+    @include media($max-width: 330px) {
+      padding:0;
+    }
+
+
+}
+
+
+main > .container {
+  max-width: 960px;
+  margin: 0;
+
+  @include media(710px) {
+    margin: 0 auto;
+  }
+
+  & > article {
     @include media(710px) {
         max-width:80%;
         float:left;
         overflow:auto;
     }
     overflow:hidden;
+  }
 }
