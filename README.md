@@ -91,3 +91,16 @@ A table's design is more than the CSS and HTML that defines it, and there are a 
 a table) will be spaced. Use for grouping content.
 
 Don't forget to use `thead` and `caption` in tables.
+
+
+## 500 error page
+
+By default Django doesn't pass any context to the 500 error page. This means
+that the logo won't show up.
+
+If you want to enable the logo, use the DC 500 view that does nothing more than
+adding the path to the theme's logo.
+
+Add the following to the root URLConf:
+
+`handler500 = 'dc_theme.urls.dc_server_error'`
