@@ -94,6 +94,10 @@
 
   form {
     display: inline-block;
+    @include media($max-width: 330px) {
+      display:block;
+    }
+
   }
 
   h2 {
