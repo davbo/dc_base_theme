@@ -76,9 +76,11 @@ def is_radio(field):
 def is_file(field):
     return isinstance(field.field.widget, forms.FileInput)
 
+
 @register.filter
 def is_dc_date_field(field):
     return isinstance(field.field.widget, DayMonthYearWidget)
+
 
 @register.filter
 def is_heading(field):

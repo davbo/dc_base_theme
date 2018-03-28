@@ -1,11 +1,6 @@
-import six
 import datetime
 
 from django.core.exceptions import ValidationError
-from django.utils.encoding import force_text
-from django.utils.html import conditional_escape
-from django.utils.safestring import mark_safe
-from django.utils.translation import ugettext as _
 
 from django import forms
 from . import widgets
@@ -19,6 +14,7 @@ class DCHeaderField(forms.Field):
     def __init__(self, *args, **kwargs):
         kwargs['required'] = False
         super().__init__(*args, **kwargs)
+
 
 class DCDateField(forms.MultiValueField):
 
