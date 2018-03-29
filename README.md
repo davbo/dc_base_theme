@@ -104,3 +104,19 @@ adding the path to the theme's logo.
 Add the following to the root URLConf:
 
 `handler500 = 'dc_theme.urls.dc_server_error'`
+
+## HTML testing page
+
+To test how HTML elemtnts are likely to render in your project, this theme provides a tester URL. Enable it by adding the following to your root url config:
+
+```
+urlpatterns += [
+    url(r'^dc_base_theme', include('dc_theme.urls')),
+]
+```
+
+The current testing URLs are:
+
+* `/`: all HTML5 elements, plus some DC cards and example content
+* `/500.html`: the server error page
+* `/404.html`: the 404 page.
