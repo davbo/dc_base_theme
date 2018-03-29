@@ -1,4 +1,3 @@
-import datetime
 import re
 
 from django.forms.widgets import MultiWidget, NumberInput
@@ -18,7 +17,6 @@ class DayMonthYearWidget(MultiWidget):
             NumberInput(attrs={'label': 'Year'}),
         ]
         super(MultiWidget, self).__init__(attrs)
-
 
     def render(self, name, value, attrs=None):
         if self.is_localized:
@@ -57,7 +55,6 @@ class DayMonthYearWidget(MultiWidget):
             return mark_safe(self.format_output(output))
         except AttributeError:
             return mark_safe(''.join(output))
-
 
     def decompress(self, value):
         if not value:

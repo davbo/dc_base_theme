@@ -1,9 +1,11 @@
 from django.conf import settings
 
+
 def setting(key, default):
     return getattr(
         settings,
         key, default)
+
 
 def dc_theme_context(request):
     return {
