@@ -49,7 +49,7 @@ setup(name='DC Base Theme',
           'https://github.com/mysociety/django-pipeline-csscompressor/archive/master.zip==master',
       ],
       install_requires=[
-          'django-pipeline==1.6.9',
+          'django-pipeline>=1.6.8,<2.0',
           'libsass==0.11.1',
       ]
-      )
+)
