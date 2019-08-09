@@ -20,7 +20,7 @@ class DayMonthYearWidget(MultiWidget):
         super(MultiWidget, self).__init__(attrs)
 
 
-    def render(self, name, value, attrs=None):
+    def render(self, name, value, attrs=None, renderer=None):
         if self.is_localized:
             for widget in self.widgets:
                 widget.is_localized = self.is_localized
