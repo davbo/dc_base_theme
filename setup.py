@@ -51,7 +51,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'django-pipeline>=1.6.8,<2.0',
-        'libsass==0.14.1',
+        'libsass==0.19.4',
         'jsmin==2.2.2',
 
     ],
